@@ -29,9 +29,9 @@ export const Login = () => {
     <>
     <Header />
     <Container className="home-wrapper pe-0 pb-60 ps-0">
-      <Row className="home-banner ">
+      <Row className="home-banner mb-5">
         <Col>
-          <Row className="banner-heading">Login</Row>
+          <Row className="banner-heading event-list">Login</Row>
         </Col>
       </Row>
       <Row className="event-list">
@@ -39,7 +39,7 @@ export const Login = () => {
           style={{ width: "600px", paddingBottom: "60px" }}
           onSubmit={(e) => handleLogin(e)}
         >
-          <Form.Group className="mb-3" controlId="formBasicTitle">
+          <Form.Group className="mb-3 text-start" controlId="formBasicTitle">
             <Form.Label>Username</Form.Label>
             <Form.Control
               type="text"
@@ -49,7 +49,7 @@ export const Login = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicDesc">
+          <Form.Group className="mb-3 text-start" controlId="formBasicDesc">
             <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"

@@ -16,7 +16,7 @@ function Header() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{backgroundColor: "#3d3d3d"}}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: "start" }}>
           {user && "Welcome"}
           </Typography>
           <Button color="inherit" onClick={handleLogout}>{user && "Logout"}</Button>

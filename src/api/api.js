@@ -39,21 +39,21 @@ const api = {
         } else {
           dataArray = data.events;
         }
-        console.log(eventObj.start, eventObj.limit);
-        const hasMore = eventObj.start <= dataArray.length;
+        if(eventObj.search) {
+          dataArray = dataArray.filter(({title}) =>
+            title.toLowerCase().includes(eventObj.search.toLowerCase())
+            );
+        }
+        const hasMore = eventObj.start + eventObj.limit < dataArray.length;
         let eventList = [];
         if (dataArray.length > 0) {
-          if (hasMore) {
             eventList = dataArray.slice(
               eventObj.start,
               eventObj.start + eventObj.limit
             );
-          } else {
-            eventList = [];
-          }
           resolve({ eventList, hasMore, new: eventObj.new });
         } else {
-          reject({ message: "No events", hasMore });
+          reject({ message: "No events" });
         }
       }, timeout || TIMEOUT);
     }),

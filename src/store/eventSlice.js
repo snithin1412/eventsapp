@@ -10,7 +10,7 @@ export const eventApi = createAsyncThunk(
       .then((res) => res)
       .catch((err) => {
         console.log("err", err);
-        return thunkAPI.rejectWithValue("fail");
+        return thunkAPI.rejectWithValue(err.message);
       });
   }
 );
@@ -147,10 +147,14 @@ const eventSlice = createSlice({
     changeStatus: (state) => {
       state.status = "idle";
     },
+    removeErrorMessage: (state) => {
+      state.errorMessage = "";
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(eventApi.pending, (state) => {
       state.status = "loading";
+      state.errorMessage = "";
     });
     builder.addCase(eventApi.fulfilled, (state, action) => {
       state.status = action.payload.hasMore ? "idle" : "completed";
@@ -160,17 +164,17 @@ const eventSlice = createSlice({
       state.hasMore = action.payload.hasMore;
       state.start = action.payload.hasMore
         ? state.start + state.limit
-        : state.start;
+        : 0;
     });
     builder.addCase(eventApi.rejected, (state, action) => {
-      console.log("the info was rejected");
       state.status = "failed";
       state.events = [];
-      state.hasMore = action.payload.hasMore;
+      state.hasMore = false;
       state.start = 0;
+      state.errorMessage = action.payload;
     });
   },
 });
 
-export const { updateSeat, booking, changeStatus } = eventSlice.actions;
+export const { updateSeat, booking, changeStatus, removeErrorMessage } = eventSlice.actions;
 export default eventSlice.reducer;

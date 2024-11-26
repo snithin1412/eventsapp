@@ -3,14 +3,12 @@
     padding-bottom: 18px;
     padding-top: 18px;
     height: 100px;
-    margin-bottom: 60px !important;
+    //margin-bottom: 60px !important;
 }
 
 .banner-heading {
     font-size: 48px;
     font-weight: 100;
-    padding-left: 250px;
-    
 }
 
 .event-list {
@@ -26,6 +24,11 @@
     border-radius: 10px;
 }
 
+.ticket-history {
+    max-width: 500px !important;
+    margin: 10px auto !important;
+}
+
 .bottom-fix{
     margin: 0 auto !important;
     max-width: 500px !important;
@@ -34,6 +37,11 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%, 0);
+
+    @media (max-width: 932px){
+            position: relative;
+            margin: 0 !important;
+      }
 }
 
 .bottom5{

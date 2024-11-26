@@ -1,4 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  useCallback,
+  useMemo,
+} from "react";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import { Container, Row, Col } from "react-bootstrap";
@@ -17,35 +23,37 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Popover from "@mui/material/Popover";
 import Spinner from "react-bootstrap/Spinner";
+import { debounce } from "lodash";
 
 export const Home = () => {
   const dispatch = useDispatch();
   const eventsDetails = useSelector((state) => state.events);
-  const { status, events, hasMore, start } = eventsDetails;
+  const { status, events, hasMore, start, errorMessage } = eventsDetails;
   const observerTarget = useRef(null);
   const navigate = useNavigate();
   const [price, setPrice] = React.useState([0, 500]);
   const [checked, setChecked] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const [filter, setFilter] = useState({ category: [], price: [0, 500] });
+  const [search, setSearch] = useState("");
+  const [errMessage, setErrMessage] = useState("");
+  const [show, setShow] = useState(false);
   const handlePrice = (event, newValue) => {
     setPrice(newValue);
   };
 
   const callbackFunction = (entries) => {
-    if (entries[0].isIntersecting && hasMore) {
+    if (entries[0].isIntersecting && hasMore ) {
       if (status === "idle" || "completed") {
-        console.log("bbb");
         dispatch(
-          eventApi({ start: start, limit: 8, filter: filter, new: false })
-        )
-          .unwrap()
-          .then((resp) => {
-            console.log(resp);
+          eventApi({
+            start: start,
+            limit: 8,
+            filter: filter,
+            search: search,
+            new: false,
           })
-          .catch(() => {
-            console.log("error");
-          });
+        )
       }
     }
   };
@@ -55,7 +63,7 @@ export const Home = () => {
       threshold: 1,
     });
 
-    let obsTarget = observerTarget.current
+    let obsTarget = observerTarget.current;
 
     if (obsTarget) {
       observer.observe(obsTarget);
@@ -103,16 +111,10 @@ export const Home = () => {
         start: 0,
         limit: 8,
         filter: { category: checked, price: price },
+        search: search,
         new: true,
       })
     )
-      .unwrap()
-      .then((resp) => {
-        console.log(resp);
-      })
-      .catch(() => {
-        console.log("error");
-      });
   };
 
   const removeFilter = () => {
@@ -130,34 +132,55 @@ export const Home = () => {
         start: 0,
         limit: 8,
         filter: { category: [], price: [0, 500] },
+        search: search,
         new: true,
       })
     )
-      .unwrap()
-      .then((resp) => {
-        console.log(resp);
+  };
+
+  const searchRequest = useCallback((searchTerm) => {
+    console.log(searchTerm);
+    dispatch(
+      eventApi({
+        start: 0,
+        limit: 8,
+        filter: { category: [], price: [0, 500] },
+        search: searchTerm,
+        new: true,
       })
-      .catch(() => {
-        console.log("error");
-      });
+    )
+  }, []);
+
+  const debouncedSearch = useMemo(() => {
+    return debounce(searchRequest, 2000);
+  }, [searchRequest]);
+
+  const handleSearch = (searchTerm) => {
+    setErrMessage("");
+    setSearch(searchTerm);
+    debouncedSearch(searchTerm);
   };
 
   return (
     <>
       <Header />
       {status && (
-        <Container className="home-wrapper mb-4 pe-0 pb-60 ps-0">
-          <Row className="home-banner mb-4">
+        <Container className="home-wrapper pe-0 pb-60 ps-0">
+          <Row className="home-banner mb-2">
             <Col>
-              <Row className="banner-heading">Explore Events</Row>
+              <Row className="banner-heading event-list">Explore Events</Row>
             </Col>
           </Row>
           <Row></Row>
-          <Row className="mb-4">
+          <Row className="mb-2">
             <Col>
               <Row className="event-list mb-5 justify-content-start">
                 <InputGroup className="mb-3 w-50">
-                  <Form.Control className="w-50" placeholder="Search....." />
+                  <Form.Control
+                    className="w-50"
+                    placeholder="Search....."
+                    onChange={(e) => handleSearch(e.target.value)}
+                  />
                   <Button variant="contained" onClick={handleClick}>
                     Filter
                   </Button>
@@ -258,9 +281,17 @@ export const Home = () => {
                 </InputGroup>
 
                 <Divider className="mb-4 bdClrGrey" />
+                {errorMessage && (
+                <div className="p-3 mt-4 text-start text-danger-emphasis bg-danger-subtle border rounded-3">
+                {errorMessage}
+                </div>
+                )}
                 {events.map((event, index) => {
                   return (
-                    <Card className="card-width mb-4 text-start" key={`card=${index}`}>
+                    <Card
+                      className="card-width mb-4 text-start"
+                      key={`card=${index}`}
+                    >
                       <Card.Body className="pb-1">
                         <Card.Title className="mb-1 fw-bold card-title-dimension text-capitalize">
                           {event.title}
@@ -286,9 +317,18 @@ export const Home = () => {
                           </Card.Text>
                         </Row>
                         <Row>
+                          <Col>
                           <Card.Text className="event-desc text-start mt-3">
                             <span className="fs-14">Price: ₹{event.price}</span>
                           </Card.Text>
+                          </Col>
+                          <Col>
+                          <Card.Text className="event-desc text-end mt-3">
+                            <span className="fs-14 fw-bold">{event.date}</span>
+                          </Card.Text>
+                          </Col>
+                          
+                         
                         </Row>
                       </Card.Body>
                       <Card.Footer>
@@ -310,18 +350,18 @@ export const Home = () => {
               </Row>
             </Col>
           </Row>
+          {hasMore && ( 
+            <div
+              id="ref"
+              className="mt-3 mb-4 d-flex justify-content-center"
+              ref={observerTarget}
+            >
+              <Spinner animation="grow" /> 
+            </div>
+         )}
         </Container>
       )}
 
-      {hasMore && (
-        <div
-          id="ref"
-          className="mt-4 d-flex justify-content-center"
-          ref={observerTarget}
-        >
-          <Spinner ref={observerTarget} animation="grow" />
-        </div>
-      )}
       <Footer />
     </>
   );
