@@ -1,0 +1,97 @@
+.home-banner {
+    background-color: #f3f2f0;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    height: 100px;
+    margin-bottom: 60px !important;
+}
+
+.banner-heading {
+    font-size: 48px;
+    font-weight: 100;
+    padding-left: 250px;
+    
+}
+
+.event-list {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.seat-list {
+    max-width: 500px !important;
+    margin: 10px auto !important;
+    height: 70px;
+    border: 1px solid #c9bda6;
+    border-radius: 10px;
+}
+
+.bottom-fix{
+    margin: 0 auto !important;
+    max-width: 500px !important;
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bottom5{
+    bottom: 5rem !important;
+}
+
+.book-button{
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    height: 70px;
+    border: 1px solid #c9bda6;
+    border-radius: 10px;
+}
+
+.spinner-pos {
+    display: block;
+    margin: 0 auto;
+}
+
+.card-width {
+    width: 290px !important;
+    padding: 0 !important;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 325px !important;
+}
+
+.event-desc {
+    overflow: auto;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pt-60 {
+    padding-top: 60px !important;
+}
+
+  .fs-14 {
+    font-size: 14px !important;
+  }
+
+  .fs-12 {
+    font-size: 12px !important;
+  }
+
+  .card-title-dimension {
+    height: 44px !important;
+    font-size: 18px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+
+.bdClrGrey {
+    border-color: rgb(0 0 0 / 69%) !important;
+}

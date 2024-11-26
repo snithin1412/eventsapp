@@ -1,0 +1,1000 @@
+{
+    "user": {
+        "userid": "snithin",
+        "fullName": "snithin",
+        "email": "sni@abc.com",
+        "password": "admin"
+    },
+    "events": [
+        {
+            "eventId": 1,
+            "title": "Event One",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 2,
+            "title": "Event Two",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 100,
+                "availableSeats": 100,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 20
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 30
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 50
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 3,
+            "title": "Event Three",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 100,
+                "availableSeats": 100,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 20
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 30
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 50
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 4,
+            "title": "Event Four",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 100,
+                "availableSeats": 100,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 20
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 30
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 50
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 5,
+            "title": "Event Five",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 6,
+            "title": "Event Six",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 7,
+            "title": "Event Seven",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 8,
+            "title": "Event Eight",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 9,
+            "title": "Event Nine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 10,
+            "title": "Event Ten",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 5,
+            "title": "Event Five",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 6,
+            "title": "Event Six",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 7,
+            "title": "Event Seven",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 8,
+            "title": "Event Eight",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 9,
+            "title": "Event Nine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 5,
+            "title": "Event Five",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 6,
+            "title": "Event Six",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 7,
+            "title": "Event Seven",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 8,
+            "title": "Event Eight",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 9,
+            "title": "Event Nine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 5,
+            "title": "Event Five",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 6,
+            "title": "Event Six",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 7,
+            "title": "Event Seven",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 8,
+            "title": "Event Eight",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 9,
+            "title": "Event Nine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 5,
+            "title": "Event Five",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "concert",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 6,
+            "title": "Conferences Six",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "conferences",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 7,
+            "title": "Conferences Seven",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "conferences",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 8,
+            "title": "Sports Eight",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "sports",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        },
+        {
+            "eventId": 9,
+            "title": "Sports Nine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "category": "sports",
+            "price": 100,
+            "baseprice": 100,
+            "hikeLimit": 90,
+            "seats": {
+                "totalSeats": 10,
+                "availableSeats": 10,
+                "seatCategory": [
+                    {
+                        "category": "vip",
+                        "price": 200,
+                        "baseprice": 200,
+                        "seats": 2
+                    },
+                    {
+                        "category": "standard",
+                        "price": 150,
+                        "baseprice": 150,
+                        "seats": 3
+                    },
+                    {
+                        "category": "economy",
+                        "price": 100,
+                        "baseprice": 100,
+                        "seats": 5
+                    }
+                ]
+            }
+        }
+    ]
+}
