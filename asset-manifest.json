@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/eventsapp/static/css/main.b69fbfc0.css",
-    "main.js": "/eventsapp/static/js/main.12056a9d.js",
+    "main.js": "/eventsapp/static/js/main.5b2c48c7.js",
     "static/js/453.48d4d1ce.chunk.js": "/eventsapp/static/js/453.48d4d1ce.chunk.js",
     "index.html": "/eventsapp/index.html",
     "main.b69fbfc0.css.map": "/eventsapp/static/css/main.b69fbfc0.css.map",
-    "main.12056a9d.js.map": "/eventsapp/static/js/main.12056a9d.js.map",
+    "main.5b2c48c7.js.map": "/eventsapp/static/js/main.5b2c48c7.js.map",
     "453.48d4d1ce.chunk.js.map": "/eventsapp/static/js/453.48d4d1ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b69fbfc0.css",
-    "static/js/main.12056a9d.js"
+    "static/js/main.5b2c48c7.js"
   ]
 }
